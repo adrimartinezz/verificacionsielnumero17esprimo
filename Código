@@ -1,3 +1,4 @@
+#include <iostream>
 int main () {
     int x = 17;
     bool y = true;
@@ -5,8 +6,8 @@ int main () {
         y = false;
     }
     else {
-        for (int i = 1; i < x * 2; ++i) {
-            if (x % i != 0) {
+        for (int i = 2; i < x - 1; ++i) {
+            if (x % i == 0) {
                 y = false;
                 break;
             }
